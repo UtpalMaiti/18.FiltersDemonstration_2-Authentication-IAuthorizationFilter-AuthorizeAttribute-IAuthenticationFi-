@@ -1,0 +1,29 @@
+﻿@model FiltersDemonstration_2.Models.LoginInfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h2>Welcome to Login Page...</h2>
+        @using (Html.BeginForm())
+        {
+            <p>
+                <label>UserName : @Html.TextBoxFor(e=>e.UserName)</label>
+            </p>
+            <p>
+                <label>PassWord : @Html.TextBoxFor(e => e.PassWord)</label>
+            </p>
+            <button>LogIn</button>
+        }
+    </div>
+</body>
+</html>
